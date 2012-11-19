@@ -1,0 +1,15 @@
+{
+    "name": "phpforce/rest-client",
+    "description": "A client for the Salesforce REST API",
+    "authors": [
+        {
+            "name": "David de Boer",
+            "email": "david@ddeboer.nl"
+        }
+    ],
+    "require": {
+        "guzzle/http": "@stable",
+        "phpforce/soap-client": "*"
+    },
+    "minimum-stability": "dev"
+}
