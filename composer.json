@@ -1,6 +1,9 @@
 {
     "name": "phpforce/rest-client",
+    "type": "library",
     "description": "A client for the Salesforce REST API",
+    "keywords": [ "salesforce", "rest", "force.com", "web services" ],
+    "license": "MIT",
     "authors": [
         {
             "name": "David de Boer",
