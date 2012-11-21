@@ -47,6 +47,25 @@ class Client
     }
 
     /**
+     * Perform post to Salesforce REST API
+     *
+     * @param string $uri
+     * @param array  $arguments
+     *
+     * @return array The JSON response as an array
+     */
+    public function post($uri, array $arguments = array())
+    {
+        $request = $this->getClient()->post($uri);
+        $request->setHeader('Authorization', 'Bearer ' . $this->getSessionId());
+        $request->getParams()->merge($arguments);
+
+        $response = $request->send();
+
+        return $response->json();
+    }
+
+    /**
      * Get Guzzle client
      *
      * @return \Guzzle\Http\Client
