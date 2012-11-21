@@ -11,8 +11,13 @@
         }
     ],
     "require": {
-        "guzzle/http": "@stable",
+        "guzzle/http": "*",
         "phpforce/soap-client": "*"
+    },
+    "autoload": {
+        "psr-0": {
+            "Phpforce\\RestClient": "src"
+        }
     },
     "minimum-stability": "dev"
 }
