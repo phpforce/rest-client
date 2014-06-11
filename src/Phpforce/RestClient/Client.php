@@ -58,7 +58,7 @@ class Client
     {
         $request = $this->getClient()->post($uri);
         $request->setHeader('Authorization', 'Bearer ' . $this->getSessionId());
-        $request->setBody(json_encode($arguments), 'application/json');
+        $request->getParams()->merge($arguments);
 
         $response = $request->send();
 
