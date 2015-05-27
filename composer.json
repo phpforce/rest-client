@@ -11,7 +11,7 @@
         }
     ],
     "require": {
-        "guzzle/http": "*",
+        "guzzle/guzzle": "*",
         "phpforce/soap-client": "*"
     },
     "autoload": {
