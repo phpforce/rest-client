@@ -2,7 +2,7 @@
 namespace Phpforce\RestClient;
 
 use Phpforce\SoapClient\ClientInterface;
-use Guzzle\Http\Client as GuzzleClient;
+use GuzzleHttp\Client as GuzzleClient;
 use Phpforce\SoapClient\Result\LoginResult;
 
 /**
